@@ -10,7 +10,10 @@ body {
 }
 
 hr {
-    margin: 33px 0 31px;
+    border: none;
+    width: 100%;
+    border-top: 1px solid #e4e4ec;
+    margin: 30px 0;
 }
 
 
@@ -30,6 +33,10 @@ ul {
     justify-content: center;
 }
 
+.ulka a {
+    transition: all 0.5s ease;
+}
+
 .flex-between {
     display: flex;
     column-gap: 32px;
@@ -42,7 +49,7 @@ ul {
     letter-spacing: 2px;
     line-height: 1.7em;
     color: #b1b1d2;
-
+    transition: all 0.5s ease;
 }
 
 .content {
@@ -54,7 +61,7 @@ ul {
     background-color: #fd8300;
 }
 
-.buttons {
+.buttons a {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -70,14 +77,15 @@ ul {
 }
 
 .minimain a {
+    transition: all 0.5s ease;
     text-decoration: none;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 0.6em;
     color: #25252c;
 }
 
 .main-img {
-    background: url(/img/Rectangle.png) no-repeat center/cover;
+    background: url(../img/Rectangle.png) no-repeat center/cover;
     width: 100%;
     padding: 50px 0;
     text-align: center;
@@ -99,7 +107,7 @@ ul {
 
 .main-img b {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1em;
     color: #fd8300;
 }
 
@@ -118,12 +126,16 @@ ul {
 }
 
 .main-a a {
+    transition: all 0.5s ease;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.7em;
     color: #fd8300;
 }
 
+.house-other {
+    padding-bottom: 46px;
+}
 
 .house-other h2 {
     font-size: 24px;
@@ -140,27 +152,44 @@ ul {
 
 .menu-main p {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 0.7em;
     color: #9999a6;
 }
 
 .falling-out {
+    padding: 37px 0 0 10px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 0.6em;
     color: #ffffff;
     font-family: "Roboto Slab";
 }
 
 .falling-out p {
-    border-radius: 3px;
+    padding: 10px 45px 10px 10px;
+    display: block;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     background-color: #1f1f56;
 }
 
 .falling-out a {
+    transition: all 0.5s ease;
+    text-decoration: none;
+    padding: 10px 45px 10px 10px;
+    display: block;
+    background-color: #e4e4ec;
+    border: 2px solid #cdcddd;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 0.6em;
     color: #25252c;
     font-family: "Arial";
+}
+
+
+
+.white-bg {
+    background-color: #ededf5;
+    padding: 20px 0;
 }
 
 .fotter a {
@@ -168,11 +197,12 @@ ul {
     font-size: 14px;
     line-height: 1.8em;
     color: #666;
+    font-family: "Arial";
 }
 
 .name {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 0.7em;
     color: #9999a6;
     font-family: "Arial";
     text-align: center;
@@ -185,11 +215,19 @@ ul {
     color: #fb9121;
 }
 
+.content a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+
 .main-a a:hover {
     text-decoration: underline;
+    color: silver;
 }
 
 .minimain a:hover {
+    color: #fd8300;
     text-decoration: underline;
 }
 
@@ -197,6 +235,12 @@ ul {
     display: none;
 }
 
-.falling-out a:hover>.submenu {
+.falling-out li:hover > .submenu {
     display: block;
+}
+
+.falling-out a:hover {
+    text-decoration: underline;
+    background-color: #fd8300;
+    color: #ffffff;
 }
