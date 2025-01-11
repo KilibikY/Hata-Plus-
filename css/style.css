@@ -54,6 +54,12 @@ ul {
     list-style: none;
 }
 
+p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 header {
     padding-top: 55px;
 }
@@ -105,6 +111,11 @@ header {
     transition: all 0.5s ease;
 }
 
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+} 
 .content {
     position: fixed;
     width: 100%;
@@ -140,11 +151,19 @@ header {
     color: #25252c;
 }
 
+
 .main-img {
     background: url(../img/Rectangle.png) no-repeat center/cover;
     width: 100%;
     padding: 50px 0;
     text-align: center;
+}
+
+.phone {
+    font-size: 18px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .phone svg {
@@ -165,19 +184,10 @@ header {
     fill: #1f1f56;
 }
 
-.Gamil {
-    position: relative;
-}
 
-.Gamil:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 28px;
-    width: 1px;
-    height: 51px;
-    border: 1px solid #e4e4ec;
-}
+.Gamil a {
+    text-decoration: underline;
+}   
 
 
 
@@ -272,39 +282,79 @@ header {
     color: #9999a6;
 }
 
-.falling-out {
-    padding: 37px 0 0 10px;
-    font-size: 16px;
-    line-height: 0.6em;
-    color: #ffffff;
-    font-family: "Roboto Slab";
-}
-
-.falling-out li {
-    list-style: none;
+aside {
+    min-width: 220px;
 }
 
 .falling-out p {
-    padding: 10px 45px 10px 10px;
-    display: block;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    font-size: 16px;
+    line-height: 0.6em;
+    color: #ffffff;
+    padding: 10px 16px;
     background-color: #1f1f56;
+    font-family: "Roboto Slab";
 }
 
-.falling-out a {
-    transition: all 0.5s ease;
-    text-decoration: none;
-    padding: 10px 45px 10px 10px;
+.menu a {
     display: block;
-    background-color: #e4e4ec;
-    border-top: 2px solid #cdcddd;
     font-size: 14px;
-    line-height: 0.6em;
+    line-height: 0.5em;
     color: #25252c;
     font-family: "Arial";
+    padding: 10px 16px;
+    background-color: #e4e4ec;
+    color: #000;
+    text-decoration: none;
 }
 
+.menu > li > a {
+    position: relative;
+}
+
+.menu > li > a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all .1s ease;
+}
+
+.menu > li:hover > a:before {
+    transform: translateY(-50%) rotate(225deg);
+}
+
+.menu li:hover > .submenu {
+    visibility: visible;
+    max-height: 1000px;
+    transition: max-height .5s ease;
+}
+
+.menu li:hover > a {
+    background-color: #fd8300;
+}
+
+.submenu li:hover > a {
+    background-color: #cecedd;
+}
+
+
+.menu > li {
+    border-top: 1px solid #000;
+}
+
+.submenu {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.submenu a {
+    background-color: #e4e4ec;
+}
 
 
 .white-bg {
@@ -336,7 +386,6 @@ header {
 }
 
 .content a:hover {
-    text-decoration: underline;
     color: #fd8300;
 }
 
@@ -348,19 +397,6 @@ header {
 
 .minimain a:hover {
     color: #fd8300;
-    text-decoration: underline;
 }
 
-.submenu {
-    display: none;
-}
 
-.falling-out li:hover>.submenu {
-    display: block;
-}
-
-.falling-out a:hover {
-    text-decoration: underline;
-    background-color: #fd8300;
-    color: #ffffff;
-}
