@@ -98,10 +98,86 @@ header {
     fill: #fd8300;
 }
 
-.wrapper-header {
-    padding: 14.1px 0;
+.house-one {
+    border-radius: 3px;
 }
 
+.house-dogs {
+    border-radius: 3px;
+}
+
+.house-one,
+.house-dogs {
+    display: none;
+}
+
+.ulika li:hover > .house-one,
+.house-one li:hover > .house-dogs {
+    display: block;
+}
+
+.ulika li {
+    position: relative;
+    padding: 15.7px 0;
+}
+.house-one li {
+    position: relative;
+}
+.house-dogs,
+.house-one {
+    position: absolute;
+    min-width: 120px;
+    top: 100%;
+    left: 0;
+    background-color: #e4e4ec;
+}
+
+.house-one li:hover {
+    background-color: #fd8300;
+}
+
+.house-dogs {
+    top: 0;
+    left: calc(100% + 4px);
+}
+.house-dogs:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    border-left: 4px solid transparent;
+    height: 100%;
+}
+
+.ulika .house-one a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+.house-one > li > a {
+    position: relative;
+}
+
+.house-one > li > a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #666;
+    border-left: 2px solid #666;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all .1s ease;
+}
+
+.house-one > li:hover > a:before {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: translateY(-50%) rotate(225deg);
+}
 .content a {
     text-decoration: none;
     font-size: 14px;
@@ -246,6 +322,100 @@ header {
     position: sticky;
     top: 55px;
 }
+
+.h1-main {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+.text {
+    padding-top: 12px;
+    padding-bottom: 27px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+table {
+    border-radius: 3px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+thead {
+ 
+    background-color: #1f1f56;
+}
+
+tbody {
+    
+    background-color: #e4e4ec;
+}
+td {    padding-right: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    padding: 12px;
+}
+td+td {
+
+    border-left: 1px solid #cecedd;
+}
+
+td {
+    border-top: 1px solid #cecedd;
+}
+
+th {
+    border: 1px solid #274569;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    
+}
+
+.loren:nth-child(2) {
+    padding: 14px 0;
+}
+
+.lorey:nth-child(3) {
+    text-align: right;
+    padding-right:  10px;
+}
+
+.loret:first-child {
+    padding: 23.5px 100px 23.5px 10px;
+    text-align: left;
+}
+
+.lorem {
+    padding: 15px 10px;
+}
+
+
+
+.text-gg {
+    padding: 24px 0;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.posilania a {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}  
 
 .house-other {
     padding-bottom: 46px;
