@@ -61,6 +61,7 @@ p, ul {
 }
 
 header {
+    backdrop-filter: drop-shadow(0 0 5px black(0,0,0,0.1));
     padding-top: 55px;
 }
 
@@ -79,10 +80,18 @@ header {
     transition: all 0.5s ease;
 }
 
+.wrapper-header {
+    padding: 13.2px 0;
+}
+
 .flex-between {
     display: flex;
     column-gap: 32px;
     justify-content: space-between;
+}
+
+.house-one {
+    border-radius: 3px;
 }
 
 .phone_one a {
@@ -96,10 +105,6 @@ header {
 
 .ulka li:hover svg {
     fill: #fd8300;
-}
-
-.house-one {
-    border-radius: 3px;
 }
 
 .house-dogs {
@@ -118,11 +123,14 @@ header {
 
 .ulika li {
     position: relative;
-    padding: 15.7px 0;
+    padding: 2.5px 0;
 }
+
 .house-one li {
     position: relative;
+
 }
+
 .house-dogs,
 .house-one {
     position: absolute;
@@ -133,6 +141,7 @@ header {
 }
 
 .house-one li:hover {
+    border-radius: 3px;
     background-color: #fd8300;
 }
 
@@ -149,12 +158,20 @@ header {
     height: 100%;
 }
 
+.house-one li+li {
+    border-top: 1px solid #cecedd;
+}
+
 .ulika .house-one a {
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
+}
+
+.house-one a {
+    display: flex;
 }
 .house-one > li > a {
     position: relative;
@@ -164,7 +181,7 @@ header {
     content: "";
     position: absolute;
     top: 50%;
-    right: -13px;
+    right: 4px;
     width: 7px;
     height: 7px;
     border-top: 2px solid #666;
@@ -213,6 +230,14 @@ header {
     border: 2px solid #fd8300;
 }
 
+.buttons {
+    font-size: 16px;
+    line-height: 0.6em;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
 .minimain {
     display: flex;
     align-items: center;
@@ -236,10 +261,15 @@ header {
 }
 
 .phone {
+    
     font-size: 18px;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
+}
+.Gmail,
+.Phone-lih {
+    padding-bottom: 6px;
 }
 
 .phone svg {
@@ -261,7 +291,7 @@ header {
 }
 
 
-.Gamil a {
+.Gamil p {
     text-decoration: underline;
 }   
 
@@ -340,6 +370,7 @@ header {
 }
 
 table {
+    overflow: hidden;
     border-radius: 3px;
     width: 100%;
     border-collapse: collapse;
@@ -351,7 +382,6 @@ thead {
 }
 
 tbody {
-    
     background-color: #e4e4ec;
 }
 td {    padding-right: 10px;
@@ -362,12 +392,15 @@ td {    padding-right: 10px;
     padding: 12px;
 }
 td+td {
-
     border-left: 1px solid #cecedd;
 }
 
 td {
     border-top: 1px solid #cecedd;
+}
+
+td:last-child {
+    text-align: right;
 }
 
 th {
@@ -429,6 +462,7 @@ th {
 }
 
 .house-other h2 {
+    padding-bottom: 24px;
     font-size: 24px;
     line-height: 1em;
     color: #24242b;
@@ -511,7 +545,6 @@ aside {
     background-color: #cecedd;
 }
 
-
 .menu > li {
     border-top: 1px solid #000;
 }
@@ -525,13 +558,13 @@ aside {
     background-color: #e4e4ec;
 }
 
-
 .white-bg {
     background-color: #ededf5;
     padding: 20px 0;
 }
 
 .fotter a {
+    padding-right: 114px;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8em;
@@ -549,6 +582,10 @@ aside {
     padding: 13px;
 }
 
+.padiing {
+    padding-right:114px; 
+}
+
 .fotter a:hover {
     text-decoration: underline;
     color: #fb9121;
@@ -558,7 +595,6 @@ aside {
     color: #fd8300;
 }
 
-
 .main-a a:hover {
     text-decoration: underline;
     color: silver;
@@ -567,5 +603,3 @@ aside {
 .minimain a:hover {
     color: #fd8300;
 }
-
-
