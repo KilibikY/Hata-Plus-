@@ -61,7 +61,7 @@ p, ul {
 }
 
 header {
-    backdrop-filter: drop-shadow(0 0 5px black(0,0,0,0.1));
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
     padding-top: 55px;
 }
 
@@ -80,8 +80,8 @@ header {
     transition: all 0.5s ease;
 }
 
-.wrapper-header {
-    padding: 13.2px 0;
+.ulika > li {
+    padding: 15.6px 0;
 }
 
 .flex-between {
@@ -97,6 +97,7 @@ header {
 .phone_one a {
     padding: 0 0 0 22px;
 }
+
 
 .ulka svg {
     fill: #fff;
@@ -120,10 +121,25 @@ header {
 .house-one li:hover > .house-dogs {
     display: block;
 }
+.house-one:before {
+    content: "";
+    position: absolute;
+    border-top: 1px solid transparent;
+    top: -5px;
+    left: 0;
+}
+.house-dogs,
+.house-one {
+    content: "";
+    position: absolute;
+    border-top: 1px solid transparent;
+    top: calc(100% + 5px);
+    left: 0;
+    min-width: 140px;
+}
 
 .ulika li {
     position: relative;
-    padding: 2.5px 0;
 }
 
 .house-one li {
@@ -161,6 +177,7 @@ header {
 .house-one li+li {
     border-top: 1px solid #cecedd;
 }
+
 
 .ulika .house-one a {
     font-size: 12px;
@@ -403,6 +420,18 @@ td:last-child {
     text-align: right;
 }
 
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: center;
+}
+
+td:nth-child(4) {
+    text-align: center;
+}
+
 th {
     border: 1px solid #274569;
     font-size: 14px;
@@ -564,7 +593,6 @@ aside {
 }
 
 .fotter a {
-    padding-right: 114px;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.8em;
@@ -582,9 +610,6 @@ aside {
     padding: 13px;
 }
 
-.padiing {
-    padding-right:114px; 
-}
 
 .fotter a:hover {
     text-decoration: underline;
