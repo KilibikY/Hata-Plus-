@@ -144,7 +144,7 @@ header {
     content: "";
     position: absolute;
     min-width: 140px;
-    border-top: 5px solid transparent;
+    border-top: 1px solid transparent;
     top: calc(100% + 5px);
     left: 0;
     background-color: #e4e4ec;
@@ -187,6 +187,10 @@ header {
 }
 .house-one > li > a {
     position: relative;
+}
+
+.ulika .house-one a:hover {
+    color: #fff;
 }
 
 .house-one > li > a:before {
@@ -608,6 +612,10 @@ aside {
     line-height: 1.8em;
     color: #666;
     font-family: "Arial";
+}
+
+.white-bg > li > a {
+    column-gap: 50px;
 }
 
 .name {
