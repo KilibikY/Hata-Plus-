@@ -115,6 +115,7 @@ header {
 .house-one,
 .house-dogs {
     display: none;
+    background-color: #e4e4ec;
 }
 
 .ulika li:hover > .house-one,
@@ -145,9 +146,9 @@ header {
     position: absolute;
     min-width: 140px;
     border-top: 1px solid transparent;
-    top: calc(100% + 5px);
+    top: calc(100% + 1px);
     left: 0;
-    background-color: #e4e4ec;
+
 }
 
 .house-one li:hover {
@@ -254,6 +255,14 @@ header {
     font-family: "Arial";
 }
 
+.skype a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
 .minimain {
     display: flex;
     align-items: center;
@@ -262,7 +271,6 @@ header {
 
 .minimain a {
     transition: all 0.5s ease;
-    text-decoration: none;
     font-size: 16px;
     line-height: 0.6em;
     color: #25252c;
@@ -276,13 +284,20 @@ header {
     text-align: center;
 }
 
-.phone {
-    
+.phone a {
+    text-decoration: none;
     font-size: 18px;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
 }
+.Gmail a {
+    font-size: 16px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
 .Gmail,
 .Phone-lih {
     padding-bottom: 6px;
@@ -307,7 +322,7 @@ header {
 }
 
 
-.Gamil p {
+.Gamil a {
     text-decoration: underline;
 }   
 
@@ -401,14 +416,16 @@ tbody {
     background-color: #e4e4ec;
 }
 
-tr {
+td {
     transition: all 0.5s ease;
 }
 
-tbody > tr:hover {
+tbody tr:hover td {
+    color: #fff;
     background-color: #fd8300;
 }
 
+  
 td {
     padding-right: 20px;
     font-size: 14px;
@@ -492,6 +509,21 @@ th {
     color: #1f1f56;
 }
 
+.trer {
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.treee {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
 .house-other {
     padding-bottom: 46px;
 }
@@ -534,20 +566,22 @@ aside {
 
 .falling-out p {
     font-size: 16px;
-    line-height: 0.6em;
     color: #ffffff;
     padding: 10px 16px;
     background-color: #1f1f56;
     font-family: "Roboto Slab";
 }
 
+
+.falling-out > p > menu > li {
+    border-radius: 3px;
+}
 .menu a {
     display: block;
     font-size: 14px;
-    line-height: 0.5em;
     color: #25252c;
     font-family: "Arial";
-    padding: 10px 16px;
+    padding: 10px 25px;
     background-color: #e4e4ec;
     color: #000;
     text-decoration: none;
@@ -561,7 +595,7 @@ aside {
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 5px;
     width: 7px;
     height: 7px;
     border-top: 2px solid #000;
@@ -574,10 +608,27 @@ aside {
     transform: translateY(-50%) rotate(225deg);
 }
 
+.menu {
+    
+}
+
+.menu li:hover > a:before {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
 .menu li:hover > .submenu {
     visibility: visible;
     max-height: 1000px;
     transition: max-height .5s ease;
+}
+
+.submenu a:hover {
+    background-color: #cecedd;
+}
+
+.menu a:hover {
+    color:#fff;
 }
 
 .menu li:hover > a {
@@ -595,6 +646,9 @@ aside {
 .submenu {
     visibility: hidden;
     max-height: 0;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
 }
 
 .submenu a {
