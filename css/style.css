@@ -175,10 +175,9 @@ header {
 
 
 .ulika .house-one a {
-    padding: 12px 5px;
+    padding: 5px 10px;
     font-size: 12px;
     letter-spacing: 2px;
-    line-height: 24px;
     color: #25252c;
     font-family: "Arial";
 }
@@ -198,7 +197,7 @@ header {
     content: "";
     position: absolute;
     top: 50%;
-    right: 4px;
+    right: 9px;
     width: 7px;
     height: 7px;
     border-top: 2px solid #666;
@@ -239,6 +238,7 @@ header {
 }
 
 .buttons a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -427,12 +427,10 @@ tbody tr:hover td {
 
   
 td {
-    padding-right: 20px;
+    padding: 12px 20px;
     font-size: 14px;
-    line-height: 24px;
     color: #666666;
     font-family: "Arial";
-    padding: 12px;
 }
 td+td {
     border-left: 1px solid #cecedd;
@@ -461,7 +459,6 @@ td:nth-child(4) {
 th {
     border: 1px solid #274569;
     font-size: 14px;
-    line-height: 24px;
     color: #ffffff;
     font-family: "Roboto Slab";
     
@@ -567,7 +564,7 @@ aside {
 .falling-out p {
     font-size: 16px;
     color: #ffffff;
-    padding: 10px 16px;
+    padding: 10px 15px;
     background-color: #1f1f56;
     font-family: "Roboto Slab";
 }
@@ -581,9 +578,9 @@ aside {
     font-size: 14px;
     color: #25252c;
     font-family: "Arial";
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #e4e4ec;
-    color: #000;
+    color: #666;
     text-decoration: none;
 }
 
@@ -595,11 +592,11 @@ aside {
     content: "";
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 14px;
     width: 7px;
     height: 7px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
+    border-top: 2px solid #666;
+    border-left: 2px solid #666;
     transform: translateY(-50%) rotate(135deg);
     transition: all .1s ease;
 }
@@ -623,6 +620,14 @@ aside {
     transition: max-height .5s ease;
 }
 
+.submenu a {
+    pa
+}
+
+.faling-out {
+    border-radius: 3px;
+    overflow: hidden;
+}
 .submenu a:hover {
     background-color: #cecedd;
 }
@@ -640,7 +645,11 @@ aside {
 }
 
 .menu > li {
-    border-top: 1px solid #000;
+    border-top: 1px solid #666;
+}
+
+.submenu p {
+    padding: 0 30px;
 }
 
 .submenu {
