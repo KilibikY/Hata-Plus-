@@ -140,7 +140,6 @@ header {
     position: relative;
 
 }
-
 .house-dogs,
 .house-one {
     content: "";
@@ -319,9 +318,9 @@ header {
 }
 
 .main-skype:hover svg {
-    fill: #1f1f56;
+    fill: #1f1f56;        
 }
-
+  
 
 .Gamil a {
     text-decoration: underline;
@@ -579,7 +578,6 @@ aside {
     font-family: "Arial";
     padding: 10px 15px;
     background-color: #e4e4ec;
-    color: #666;
     text-decoration: none;
 }
 
@@ -650,13 +648,24 @@ aside {
 .submenu {
     visibility: hidden;
     max-height: 0;
-    font-size: 14px;
-    color: #666666;
-    font-family: "Arial";
+ 
+}
+
+.falling:first-child {
+    padding-right: 90px;
+}
+.phone a:last-child {
+    padding-right: 90px;
+}
+.align {
+    align-items: center;
 }
 
 .submenu a {
     background-color: #e4e4ec;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
 }
 
 .white-bg {
