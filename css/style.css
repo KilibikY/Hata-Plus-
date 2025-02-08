@@ -74,6 +74,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .ulka a {
@@ -86,7 +87,6 @@ header {
 
 .flex-between {
     display: flex;
-    column-gap: 32px;
     justify-content: space-between;
 }
 
@@ -126,9 +126,10 @@ header {
     content: "";
     position: absolute;
     border-top: 5px solid transparent;
-    top: -5px;
+    top: -10px;
     left: 0;
     height: 100%;
+    width: 100%;
 }
 
 
@@ -217,6 +218,13 @@ header {
     line-height: 1.7em;
     color: #b1b1d2;
     transition: all 0.5s ease;
+}
+
+.ulika,
+.ulka {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 28px;
 }
 
 .divider {
@@ -372,7 +380,7 @@ header {
 
 .main-a a {
     transition: all 0.5s ease;
-    text-decoration: none;
+    text-decoration: underline; 
     font-size: 14px;
     line-height: 1.7em;
     color: #fd8300;
@@ -503,7 +511,7 @@ th {
 }
 
 .posilania a:hover {
-    color: #1f1f56;
+    color: #666;
 }
 
 .trer {
@@ -545,6 +553,14 @@ th {
     text-decoration: underline;
 }
 
+.house-other h3 {
+    font-size: 14px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+    padding-top: 4px;
+}
+
 .menu-main h3 {
     font-size: 14px;
     line-height: 1.7em;
@@ -564,9 +580,13 @@ aside {
 .falling-out p {
     font-size: 16px;
     color: #ffffff;
-    padding: 10px 15px;
+    padding: 12px 15px;
     background-color: #1f1f56;
     font-family: "Roboto Slab";
+}
+
+aside {
+    padding-left: 20px;
 }
 
 
@@ -576,10 +596,12 @@ aside {
     font-size: 14px;
     color: #25252c;
     font-family: "Arial";
-    padding: 10px 15px;
+    padding: 12px 15px;
     background-color: #e4e4ec;
     text-decoration: none;
 }
+
+
 
 
 .menu > li > a {
