@@ -151,9 +151,18 @@ header {
     left: 0;
 }
 
-.house-one li:hover {
-    border-radius: 3px;
+.house-one li:hover{
     background-color: #fd8300;
+}
+
+.house-one li:hover {
+    background-color: #fd8300;
+}
+.house-one li:first-child {
+    border-radius: 3px;
+}
+.house-one li:last-child {
+    border-radius: 3px;
 }
 
 .house-dogs {
@@ -263,13 +272,16 @@ header {
     font-family: "Arial";
 }
 
-.skype a {
-    text-decoration: none;
+.main-skype__head a{
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
     font-family: "Arial";
+    text-decoration: none;
 }
+
+
+
 
 .minimain {
     display: flex;
@@ -514,6 +526,23 @@ th {
     color: #666;
 }
 
+.ifrom {
+    position: relative;
+    width: 466px;
+    margin-top: 50px;
+    height: 299px;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
 .trer {
     font-size: 14px;
     line-height: 24px;
@@ -673,12 +702,15 @@ aside {
  
 }
 
-.falling:first-child {
-    padding-right: 90px;
+.fotter {
+    column-gap: 90px;
 }
-.phone a:last-child {
-    padding-right: 90px;
+
+.minimainа {
+    column-gap: 90px;
+    align-items: flex-start;
 }
+
 .align {
     align-items: center;
 }
@@ -723,7 +755,7 @@ aside {
     color: #fb9121;
 }
 
-.content a:hover {
+.content li:hover {
     color: #fd8300;
 }
 
