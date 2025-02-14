@@ -529,7 +529,6 @@ th {
 .ifrom {
     position: relative;
     width: 466px;
-    margin-top: 50px;
     height: 299px;
     overflow: hidden;
 }
@@ -549,6 +548,14 @@ iframe {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+}
+
+input {
+    width: 229px;
+    height: 41px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
 }
 
 .treee {
