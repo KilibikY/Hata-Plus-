@@ -565,8 +565,12 @@ th {
 }
 
 
-input[type=text] {
-    min-width: 229px;
+input[type=text]:last-child {
+    margin: 0 9px 9px 0;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #c5c5d4;
+    min-width: 100%;
     min-height: 41px;
 }
 
@@ -615,7 +619,7 @@ iframe {
 }
 
 textarea {
-    padding: 0 0 0 10px;
+    padding: 9px 0 0 10px;
     margin: 0 0 12px 0;
     font-size: 13px;
     line-height: 21px;
@@ -640,6 +644,11 @@ textarea {
     font-family: "Roboto Slab";
 }
 
+input [type=placeholder] {
+    padding-right: 9px;
+    color: #526374;
+}
+
 .firma {
     font-size: 14px;
     line-height: 24px;
@@ -647,6 +656,10 @@ textarea {
     font-weight: 700;
     font-family: "Roboto Slab";
     padding-bottom: 9px;
+}
+
+.tree {
+    margin-top: 25px;
 }
 form a {
     font-size: 14px;
@@ -665,10 +678,18 @@ form a {
 form a:hover {
     color: black;
 }
+label {
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+    padding-left: 10px;
+}
 
-input[type=text] {
+input[type=text]:nth-child(3),
+input[type=text]:nth-child(2) {
     margin: 0 9px 9px 0;
-    width: 229px;
+    width: 232px;
     height: 41px;
     border-radius: 3px;
     background-color: #ffffff;
@@ -681,6 +702,7 @@ input[type=text] {
     color: #666666;
     font-family: "Arial";
 }
+
 
 .house-other {
     padding-bottom: 46px;
