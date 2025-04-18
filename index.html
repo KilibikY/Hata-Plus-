@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="js/script.js">
+        const dark = document.querySelector(".dark-bgc"),
+        burger = document.querySelector(".burger"),
+        ulika = document.querySelector(".ulika"),
+        cancel = document.querySelector(".cancel")
+
+    burger.addEventListener("click", function() {
+        ulika.style.left = "0";
+        dark.style.display = "block"
+    })
+    function cancelBurger() {
+        ulika.style.left = "-100%";
+        dark.style.display = "none"
+    }
+    cancel.addEventListener("click", cancelBurger)
+    dark.addEventListener("click", cancelBurger)
+    </script>
     <title>Hata Plus+</title>
 </head>
 
@@ -15,7 +32,13 @@
     <header>
         <div class="header">
             <div class="content content__header">
+                <div class="dark-bgc"></div>
                 <div class="wrapper-header wrapper flex-between wrapper__content ">
+                    <div class="burger">
+                        <span class="bord b1"></span>
+                        <span class="bord b2"></span>
+                        <span class="bord b3"></span>
+                      </div>
                     <ul class="ulika flex-between wrapper__flex-between">
                         <li class="content__li"><a class="content__cta" href="index.html">Головна</a></li>
                         <li class="content__li"><a class="content__cta" href="#">Про компанію</a></li>
@@ -36,6 +59,7 @@
                         </li>
                         <li class="content__li"><a class="content__cta" href="#">Акції</a></li>
                         <li class="content__li"><a class="content__cta" href="tree.html">Контакти</a></li>
+                        <li class="cancel">x</li>
                     </ul>
                     <ul class="ulka flex-between">
                         <li class="fb ulka__li"><a class="ulka__cta" href="#"><svg version="1.2"

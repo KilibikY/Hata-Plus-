@@ -28,7 +28,9 @@
     font-display: swap;
 }
 
-
+html {
+    font-size: 1px;
+}
 
 body {
     padding: 0;
@@ -89,6 +91,7 @@ header {
 .flex-between {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .house-one {
@@ -262,6 +265,56 @@ header {
 .icons img:hover {
     background-color: #fd8300;
 }
+.dark-bgc {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+  }
+
+.burger {
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.bord {
+    display: block;
+    margin: 4px;
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: all 1s ease;
+  }
+  .burger:hover > .b1 {
+    transform: translateX(20px);
+  }
+  .burger:hover > .b2 {
+    transform: translateX(10px);
+  }
+  
+  .b1 {
+    width: 20px;
+  }
+  .b2 {
+    width: 30px;
+  }
+  .b3 {
+    width: 40px;
+    top: 10px;
+  }
+  .cancel {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    cursor: pointer;
+  }
 
 .buttons a {
     text-decoration: none;
@@ -783,9 +836,6 @@ aside {
     text-decoration: none;
 }
 
-
-
-
 .menu>li>a {
     position: relative;
 }
@@ -920,4 +970,58 @@ aside {
 
 .minimain a:hover {
     color: #fd8300;
+}
+@media screen and (min-width: 1440px) {
+    .flex-between {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .burger,
+    .cancel {
+      display: none;
+    }
+}
+@media screen and (max-width: 1025px) {
+    aside {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ulika {
+        display: none;
+    }
+    .top-line {
+      padding: 0 10px;
+    }
+    .ulika {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+    }
+    .cancel {
+      display: none;
+    }
+    .minimain {
+        justify-content: center;
+    }
+    
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 0.6;
+    }
+}
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 0.9;
+    }
+}
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 5;
+    }
 }
